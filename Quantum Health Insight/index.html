@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quantum Health Insight</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Quantum Health Risk Predictor</h1>
+
+    <label>Age: <input type="number" id="age"></label>
+    <label>Gender:
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </label>
+    <label>Height (m): <input type="number" step="0.01" id="height"></label>
+    <label>Weight (kg): <input type="number" id="weight"></label>
+    <label>Systolic BP: <input type="number" id="systolic"></label>
+    <label>Diastolic BP: <input type="number" id="diastolic"></label>
+    <label>Cholesterol (mg/dL): <input type="number" id="cholesterol"></label>
+    <label>Fasting Blood Sugar (mg/dL): <input type="number" id="sugar"></label>
+    <label>Do you smoke or drink? 
+      <select id="habits">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+    </label>
+    <label>Family history of disease?
+      <select id="history">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+    </label>
+    <label for="symptoms">Select Symptoms:</label>
+<select id="symptoms" multiple></select>
+<div id="severityContainer"></div>
+    <button id="predictBtn">Predict Health Risk</button>
+
+    <h2>Prediction Summary</h2>
+    <p id="summaryText" class="result-card">Your results will appear here.</p>
+    <div id="diseaseSuggestions" class="result-card"></div>
+    <div id="testSuggestions" class="result-card"></div>
+    <canvas id="riskChart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
