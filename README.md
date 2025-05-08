@@ -31,4 +31,4 @@ An intelligent health risk assessment tool that analyzes user inputs—such as v
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/health-risk-app.git
+   https://quantum-health-insight-git-main-anupam-majis-projects.vercel.app
